@@ -2,6 +2,6 @@
 
   // disable alert
   window.alert = console.log;
-  // No todos here
+  // Nothings to see here
 
 })(window);
