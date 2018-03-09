@@ -39,6 +39,8 @@
   "preferGlobal": true,
   "repository": "pgilad/leasot",
   "scripts": {
-    "test": "mocha -R spec ./tests/*.js"
+    "test": "mocha -b -R spec ./tests/*.js",
+    "debug-test": "node --inspect-brk=33295 --nolazy node_modules/mocha/bin/_mocha -R spec ./tests/*.js",
+    "watch-test": "mocha -w -b -R spec ./tests/*.js"
   }
 }
